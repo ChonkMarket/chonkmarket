@@ -1,0 +1,19 @@
+.real-time-button {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border-radius: 50%;
+	text-align: center;
+	z-index: 1000;
+	color: #6c757d;
+	background: rgba(250, 250, 250, 0.6);
+	box-shadow: 0 2px 5px 0 rgba(117, 134, 150, 0.45);
+}
+
+.real-time-button:hover {
+	background: rgba(250, 250, 250, 1);
+	color: #000
+}

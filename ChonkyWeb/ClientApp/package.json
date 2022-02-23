@@ -1,0 +1,62 @@
+{
+  "name": "nope",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@duik/it": "^0.6.0",
+    "@stripe/stripe-js": "^1.13.2",
+    "bootstrap": "^4.1.3",
+    "d3": "^6.6.0",
+    "jquery": "^3.5.1",
+    "lightweight-charts": "^3.3.0",
+    "merge": "^1.2.1",
+    "moment-timezone": "^0.4.1",
+    "protobufjs": "^6.11.1",
+    "react": "^16.0.0",
+    "react-countdown-circle-timer": "^2.5.1",
+    "react-day-picker": "^7.4.10",
+    "react-dom": "^16.0.0",
+    "react-icons": "^4.2.0",
+    "react-markdown": "^5.0.3",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.4",
+    "react-tooltip": "^4.2.17",
+    "react-useinterval": "^1.0.2",
+    "reactstrap": "^8.4.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "ajv": "^6.9.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "nan": "^2.14.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

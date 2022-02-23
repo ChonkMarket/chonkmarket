@@ -1,0 +1,107 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.5" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StockDataLibrary\StockDataLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\AAPL-1618493400-636c2f2e-a322-40bd-bdef-0912097812ce.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ARKK-1615674307-8f1de965-3dca-49ea-9e93-77b3908c9d27.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Arkk\ARKK-1616788641-e8a07c39-feb3-4111-8d4b-cd5fd7694710.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Arkk\ARKK-1616788701-0c1871d9-c65b-465b-97cd-807ed7cd4876.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\IWM-1616428696-dc4d57b6-5b8a-4aa0-9895-e6b32d801f52.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618527460-a600f9f6-e36a-4a37-907f-3932fb7d910a.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618527632-20cbaf02-c559-407c-9561-60b3980d852b.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618595360-cd0a406f-6e15-4ca0-9568-1ea8c454f843.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618925970-9cf0469a-4423-4808-8230-8a19ceec2a45.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618926000-b7d3dd3b-673b-4764-9ea5-6e82728f1177.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618926030-4943eba8-79f8-4309-91da-d50302c8b8f9.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618927920-02f1b1ec-38b1-4ef8-a108-27c7390aa9ca.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\ORATS\SPY-1618927950-290835bd-40af-483b-bb63-4afa9639f836.csv.gz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\spy-1615604763-362845c5-ca56-4caf-b081-142b16e46aaa.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617110977-79ec4321-0211-4792-9355-b3b68c65c244.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111007-0581a20d-8f71-42e7-8dda-fbbc91317b74.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111037-052812c8-174e-4516-a926-554e3ffbeb6e.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111067-1aaeb79a-6178-43a9-83b9-3365778abd6d.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111097-ed3695c1-dc0b-4c33-8a7e-a12e6037da2c.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111127-1f9c31fd-238b-4623-a1d2-052fed8df206.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1617111157-d9e5c89a-736c-422d-9396-207ed83b85eb.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SPY-1618595367-b27cf84e-9d03-4e9d-bc8e-a225a617f732.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\ORATS\" />
+  </ItemGroup>
+
+</Project>

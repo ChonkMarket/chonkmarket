@@ -1,0 +1,12 @@
+.aboutus a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.aboutus p {
+  font-size: 1rem;
+}
+
+.aboutus strong {
+  color: white;
+}

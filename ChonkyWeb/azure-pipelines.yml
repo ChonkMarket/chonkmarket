@@ -1,0 +1,40 @@
+variables:
+  system.debug: true
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+    branchName: ''
+  ${{ if ne( variables['Build.SourceBranchName'], 'main') }}:
+    branchName: -${{ variables['Build.SourceBranchName'] }}
+
+name: 'ChonkyWeb-$(Rev:r)$(branchName)'
+# Starter pipeline
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  paths:
+    include:
+      - 'ChonkyWeb/*'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'ChonkyWeb/*.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/*.csproj'
+  env:
+    ConnectionString: $(ConnectionString)
+
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: 'ChonkyWeb/Dockerfile'
+    containerRegistry: 'registry'
+    buildContext: $(Build.Repository.LocalPath)
+    repository: 'chonkyweb$(branchName)'
+    tags: |
+      $(Build.BuildId)
+      latest

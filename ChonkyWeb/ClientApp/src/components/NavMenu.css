@@ -1,0 +1,35 @@
+﻿.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .5);
+}
+
+nav.navbar {
+  background-color: black;
+  padding: 0;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+
+.DayPickerInput-OverlayWrapper {
+  z-index: 2000;
+  color: rgba(79,20,200);
+}
+
+.DayPickerInput input {
+  height: 2rem;
+  text-align: center;
+  border-radius: .25rem;
+  width: 120px;
+  margin-left: 16px;
+  color: var(--bg-main);
+}
+
+.DayPickerInput input:focus {
+  outline: none;
+  border: 2px solid rgba(79,20,200)
+}
+
+.header-logo {
+  max-height: min(6vh, 100px)
+}

@@ -1,0 +1,21 @@
+﻿.timers {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  margin: 20px;
+}
+
+.time {
+  font-size: 32px;
+}

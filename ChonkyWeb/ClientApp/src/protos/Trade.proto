@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "StockDataLibrary.Protos";
+
+message Trade {
+	int64 TradeTime = 1;
+	float Last = 2;
+	float Size = 3;
+}

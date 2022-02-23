@@ -1,0 +1,19 @@
+.floating-tooltip {
+	position: absolute;
+	display: none;
+	padding: 8px;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #ffffff;
+	background-color: rgba(0,0,0,.75);
+	text-align: left;
+	z-index: 1000;
+	pointer-events: none;
+	border: 1px solid #6c757d;
+	border-radius: 2px;
+}
+
+.symbol {
+	font-size: 24px;
+	font-weight: bold;
+}

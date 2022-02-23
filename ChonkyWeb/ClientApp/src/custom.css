@@ -1,0 +1,73 @@
+body {
+    --primary: rgb(79,20,200);
+    --bg-base: rgb(34,38,48);
+    --bg-main: #252529;
+    --border-color-base: #34343a;
+    --border-color-main: #44444e;
+    --border-color-highlight: #64646e;
+    --text-base: #ccc;
+    --text-main: #ddd;
+    --text-tertiary: #666;
+    background: var(--bg-base);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    min-height: 100%;
+    height: auto;
+  }
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1368px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1632px;
+  }
+}
+
+button, input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul *:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.btn-transparent:hover {
+  color: white
+}
+
+.dropdown-menu {
+  z-index: 2000;
+}
+
+a, a:hover, a:not([href]):hover, a:-webkit-any-link:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:not([href]) {
+  color: white;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p a {
+  color: white;
+}
+
+strong {
+  color: white;
+}

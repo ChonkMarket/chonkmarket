@@ -1,0 +1,12 @@
+.legend-icon {
+	margin: 0 6px 1px 6px;
+}
+
+.active:hover {
+	cursor: pointer;
+}
+
+.inactive {
+	opacity: 0.3;
+	cursor: pointer;
+}

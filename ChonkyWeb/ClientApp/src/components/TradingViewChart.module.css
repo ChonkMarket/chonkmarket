@@ -1,0 +1,9 @@
+.legend {
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	z-index: 999;
+}

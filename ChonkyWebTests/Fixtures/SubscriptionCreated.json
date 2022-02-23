@@ -1,0 +1,143 @@
+﻿{
+  "id": "evt_1IdlLFAi8BUL5ec3a8YxNxM0",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1617840202,
+  "data": {
+    "object": {
+      "id": "sub_JGHvPuy8YCzLoK",
+      "object": "subscription",
+      "application_fee_percent": null,
+      "billing_cycle_anchor": 1617840202,
+      "billing_thresholds": null,
+      "cancel_at": null,
+      "cancel_at_period_end": false,
+      "canceled_at": null,
+      "collection_method": "charge_automatically",
+      "created": 1617840202,
+      "current_period_end": 1620432202,
+      "current_period_start": 1617840202,
+      "customer": "cus_JGHvLS4Z5AGbuZ",
+      "days_until_due": null,
+      "default_payment_method": "pm_1IdlLBAi8BUL5ec3M5rFiToi",
+      "default_source": null,
+      "default_tax_rates": [
+      ],
+      "discount": null,
+      "ended_at": null,
+      "items": {
+        "object": "list",
+        "data": [
+          {
+            "id": "si_JGHve6a3QWLpAX",
+            "object": "subscription_item",
+            "billing_thresholds": null,
+            "created": 1617840202,
+            "metadata": {
+            },
+            "plan": {
+              "id": "price_1IcaY9Ai8BUL5ec3ByuiHQTd",
+              "object": "plan",
+              "active": true,
+              "aggregate_usage": null,
+              "amount": 2500,
+              "amount_decimal": "2500",
+              "billing_scheme": "per_unit",
+              "created": 1617560393,
+              "currency": "usd",
+              "interval": "month",
+              "interval_count": 1,
+              "livemode": false,
+              "metadata": {
+              },
+              "nickname": null,
+              "product": "prod_JF4hqbxqCWYiIS",
+              "tiers_mode": null,
+              "transform_usage": null,
+              "trial_period_days": null,
+              "usage_type": "licensed"
+            },
+            "price": {
+              "id": "price_1IcaY9Ai8BUL5ec3ByuiHQTd",
+              "object": "price",
+              "active": true,
+              "billing_scheme": "per_unit",
+              "created": 1617560393,
+              "currency": "usd",
+              "livemode": false,
+              "lookup_key": null,
+              "metadata": {
+              },
+              "nickname": null,
+              "product": "prod_JF4hqbxqCWYiIS",
+              "recurring": {
+                "aggregate_usage": null,
+                "interval": "month",
+                "interval_count": 1,
+                "trial_period_days": null,
+                "usage_type": "licensed"
+              },
+              "tiers_mode": null,
+              "transform_quantity": null,
+              "type": "recurring",
+              "unit_amount": 2500,
+              "unit_amount_decimal": "2500"
+            },
+            "quantity": 1,
+            "subscription": "sub_JGHvPuy8YCzLoK",
+            "tax_rates": [
+            ]
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/subscription_items?subscription=sub_JGHvPuy8YCzLoK"
+      },
+      "latest_invoice": "in_1IdlLCAi8BUL5ec3gGoUS2rl",
+      "livemode": false,
+      "metadata": {
+      },
+      "next_pending_invoice_item_invoice": null,
+      "pause_collection": null,
+      "pending_invoice_item_interval": null,
+      "pending_setup_intent": null,
+      "pending_update": null,
+      "plan": {
+        "id": "price_1IcaY9Ai8BUL5ec3ByuiHQTd",
+        "object": "plan",
+        "active": true,
+        "aggregate_usage": null,
+        "amount": 2500,
+        "amount_decimal": "2500",
+        "billing_scheme": "per_unit",
+        "created": 1617560393,
+        "currency": "usd",
+        "interval": "month",
+        "interval_count": 1,
+        "livemode": false,
+        "metadata": {
+        },
+        "nickname": null,
+        "product": "prod_JF4hqbxqCWYiIS",
+        "tiers_mode": null,
+        "transform_usage": null,
+        "trial_period_days": null,
+        "usage_type": "licensed"
+      },
+      "quantity": 1,
+      "schedule": null,
+      "start_date": 1617840202,
+      "status": "incomplete",
+      "transfer_data": null,
+      "trial_end": null,
+      "trial_start": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": "req_GHfDlwlbckS3ym",
+    "idempotency_key": null
+  },
+  "type": "customer.subscription.created"
+}

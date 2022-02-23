@@ -1,0 +1,40 @@
+variables:
+  system.debug: true
+  ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+    branchName: ''
+  ${{ if ne( variables['Build.SourceBranchName'], 'main') }}:
+    branchName: -${{ variables['Build.SourceBranchName'] }}
+
+name: 'OratsTradierDataConsumer-$(Rev:r)$(branchName)'
+# Starter pipeline
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  paths:
+    include:
+      - 'OratsTradierDataConsumer/*'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'OratsTradierDataConsumer/*.csproj'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: 'StockDataLibraryTests/*.csproj'
+  env:
+    ConnectionString: $(ConnectionString)
+
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: 'OratsTradierDataConsumer/Dockerfile'
+    containerRegistry: 'registry'
+    buildContext: $(Build.Repository.LocalPath)
+    repository: 'OratsTradierDataConsumer$(branchName)'
+    tags: |
+      $(Build.BuildId)
+      latest
