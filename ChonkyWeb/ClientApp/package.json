@@ -11,7 +11,7 @@
     "lightweight-charts": "^3.3.0",
     "merge": "^1.2.1",
     "moment-timezone": "^0.4.1",
-    "protobufjs": "^6.11.1",
+    "protobufjs": "^6.11.3",
     "react": "^16.0.0",
     "react-countdown-circle-timer": "^2.5.1",
     "react-day-picker": "^7.4.10",
