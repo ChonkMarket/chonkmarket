@@ -10,7 +10,7 @@
     "jquery": "^3.5.1",
     "lightweight-charts": "^3.3.0",
     "merge": "^1.2.1",
-    "moment-timezone": "^0.4.1",
+    "moment-timezone": "^0.5.35",
     "protobufjs": "^6.11.1",
     "react": "^16.0.0",
     "react-countdown-circle-timer": "^2.5.1",
